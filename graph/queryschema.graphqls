@@ -1,0 +1,17 @@
+type Student {
+  student_id: ID!
+  firstName: String!
+  middleName: String!
+  lastName: String!
+  gender: String!
+  email: String!
+  avatar: String!
+  gradeLevel: String!
+  section: String!
+}
+
+type Query {
+  student(student_id: ID!): Student!
+  students: [Student]
+  section(section: String!): [Student]
+}

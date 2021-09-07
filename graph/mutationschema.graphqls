@@ -1,0 +1,16 @@
+type Mutation {
+  registerStudent(input: RegisterStudentInput!): String
+  updateStudent(student_id: ID!, input: RegisterStudentInput!): String
+  deleteStudent(student_id: ID!): String
+}
+
+input RegisterStudentInput {
+  firstName: String!
+  middleName: String!
+  lastName: String!
+  gender: String!
+  email: String!
+  avatar: String!
+  gradeLevel: String!
+  section: String!
+}
